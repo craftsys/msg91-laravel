@@ -1,0 +1,67 @@
+{
+  "name": "craftsys/msg91-laravel",
+  "description": "Laravel service provider for MSG91 apis.",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Sudhir Mitharwal",
+      "email": "luckysud4@gmail.com",
+      "role": "Developer",
+      "homepage": "http://github.com/sudkumar"
+    }
+  ],
+  "keywords": [
+    "msg91",
+    "php",
+    "laravel",
+    "otp"
+  ],
+  "homepage": "https://github.com/craftsys/msg91-laravel",
+  "support": {
+    "issues": "https://github.com/craftsys/msg91-laravel/issues",
+    "source": "https://github.com/craftsys/msg91-laravel",
+    "email": "luckysud4@gmail.com"
+  },
+  "require": {
+    "php": ">=7.1",
+    "craftsys/msg91-php": "0.4.2",
+    "illuminate/support": "^6.3"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.2",
+    "phpunit/phpunit": "^8.4"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.x-dev",
+      "laravel": {
+        "aliases": {
+          "MSG91": "Craftsys\\Laravel\\MSG91\\Facade"
+        },
+        "providers": [
+          "Craftsys\\Laravel\\MSG91\\MSGServiceProvider"
+        ]
+      }
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Craftsys\\Laravel\\MSG91Client\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Craftsys\\Laravel\\MSG91Client\\Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit  --colors=always"
+  }
+}
