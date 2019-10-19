@@ -23,7 +23,7 @@ This is a **[laravel](https://laravel.com) service provider** for [MSG91 APIs](h
 The packages is available on [Packagist](https://packagist.org/packages/craftsys/msg91-laravel) and can be installed via [Composer](https://getcomposer.org/) by executing following command in shell.
 
 ```bash
-composer require creaftsys/msg91-laravel
+composer require craftsys/msg91-laravel
 ```
 
 ### Laravel 5.5+
