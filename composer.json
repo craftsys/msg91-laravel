@@ -38,10 +38,10 @@
     },
     "laravel": {
       "aliases": {
-        "MSG91": "Craftsys\\Laravel\\MSG91\\Facade"
+        "MSG91": "Craftsys\\Laravel\\MSG91Client\\Facade"
       },
       "providers": [
-        "Craftsys\\Laravel\\MSG91\\MSGServiceProvider"
+        "Craftsys\\Laravel\\MSG91Client\\MSGServiceProvider"
       ]
     }
   },
