@@ -1,6 +1,6 @@
 <?php
 
-namespace Craftsys\Laravel\MSG91Client;
+namespace Craftsys\MSG91Client\Laravel;
 
 use Craftsys\MSG91Client\Client;
 use Illuminate\Support\ServiceProvider;

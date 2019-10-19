@@ -1,6 +1,6 @@
 <?php
 
-namespace Craftsys\Laravel\MSG91Client\Test;
+namespace Craftsys\MSG91Client\Laravel\Test;
 
 use Craftsys\MSG91Client\Client;
 

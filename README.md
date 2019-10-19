@@ -28,23 +28,23 @@ composer require craftsys/msg91-laravel
 
 ### Laravel 5.5+
 
-If you're using Laravel 5.5 or above, the package will automatically register the `Craftsys\Laravel\MSGClient91\MSG91ServiceProvider` provider and aliases `Craftsys\Laravel\MSGClient91\Facade` facade to `MSG91`.
+If you're using Laravel 5.5 or above, the package will automatically register the `Craftsys\MSG91Client\Laravel\MSG91ServiceProvider` provider and aliases `Craftsys\MSG91Client\Laravel\Facade` facade to `MSG91`.
 
 ### Laravel 5.4 and below
 
-Add `Craftsys\Laravel\MSGClient91\MSG91ServiceProvider` to the `providers` array in your `config/app.php`:
+Add `Craftsys\MSG91Client\Laravel\MSG91ServiceProvider` to the `providers` array in your `config/app.php`:
 
 ```php
 'providers' => [
 	 // Other service providers...
-	 Craftsys\Laravel\MSGClient91\MSG91ServiceProvider::class,
+	 Craftsys\MSG91Client\Laravel\MSG91ServiceProvider::class,
 ],
 ```
 
 If you want to use the facade interface, you can `use` the facade class when needed:
 
 ```php
-use Craftsys\Laravel\MSGClient91\Facade;
+use Craftsys\MSG91Client\Laravel\Facade;
 ```
 
 Or add an alias in your `config/app.php`
@@ -52,7 +52,7 @@ Or add an alias in your `config/app.php`
 ```php
 'aliases' => [
 	// other aliases here
-	'MSG91' => Craftsys\Laravel\MSGClient91\Facade::class,
+	'MSG91' => Craftsys\MSG91Client\Laravel\Facade::class,
 ],
 ```
 

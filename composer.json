@@ -38,10 +38,10 @@
     },
     "laravel": {
       "aliases": {
-        "MSG91": "Craftsys\\Laravel\\MSG91Client\\Facade"
+        "MSG91": "Craftsys\\MSG91Client\\Laravel\\Facade"
       },
       "providers": [
-        "Craftsys\\Laravel\\MSG91Client\\MSGServiceProvider"
+        "Craftsys\\MSG91Client\\Laravel\\MSGServiceProvider"
       ]
     }
   },
@@ -53,12 +53,12 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "Craftsys\\Laravel\\MSG91Client\\": "src/"
+      "Craftsys\\MSG91Client\\Laravel\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Craftsys\\Laravel\\MSG91Client\\Test\\": "tests/"
+      "Craftsys\\MSG91Client\\Laravel\\Test\\": "tests/"
     }
   },
   "scripts": {
