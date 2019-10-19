@@ -34,15 +34,15 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "0.x.x-dev",
-      "laravel": {
-        "aliases": {
-          "MSG91": "Craftsys\\Laravel\\MSG91\\Facade"
-        },
-        "providers": [
-          "Craftsys\\Laravel\\MSG91\\MSGServiceProvider"
-        ]
-      }
+      "dev-master": "0.x-dev"
+    },
+    "laravel": {
+      "aliases": {
+        "MSG91": "Craftsys\\Laravel\\MSG91\\Facade"
+      },
+      "providers": [
+        "Craftsys\\Laravel\\MSG91\\MSGServiceProvider"
+      ]
     }
   },
   "config": {
