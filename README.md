@@ -56,6 +56,16 @@ Or add an alias in your `config/app.php`
 ],
 ```
 
+To verify that everything is working as expected, excecute the following php code somewhere in your application, either
+in an example route or in `php artisan tinker` if you are in Laravel.
+
+```php
+// this should print an array of some default configuration values
+MSG91::otp()->toArray()
+```
+
+If there is an issue, please check the steps again or open an issue for support.
+
 ## Configuration
 
 As the [msg91-php][client] offers configuration that are similar to Laravel's configuration, this package simply ports the Laravel's configuration to the msg91-php client.
