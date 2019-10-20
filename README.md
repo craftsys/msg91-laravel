@@ -103,14 +103,14 @@ Next, follow along with [examples](#examples) to learn more
 
 ### Managing OTPs
 
-OTP services like sending, verifying, and resending etc, can be accessed via `otp` method on the client instance e.g. `MGS91::otp()`.
+OTP services like sending, verifying, and resending etc, can be accessed via `otp` method on the client instance e.g. `Msg91::otp()`.
 
 > For a detailed usage, please visit [msg91-php's documentation][client-managing-otps] on managing OTPs.
 
 #### Send OTP
 
 ```php
-MGS91::otp()
+Msg91::otp()
 	->to(912343434312) // phone number with country code
 	->send(); // send the otp
 ```
