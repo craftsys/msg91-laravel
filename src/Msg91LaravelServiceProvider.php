@@ -1,11 +1,11 @@
 <?php
 
-namespace Craftsys\MSG91Client\Laravel;
+namespace Craftsys\Msg91;
 
-use Craftsys\MSG91Client\Client;
+use Craftsys\Msg91\Client;
 use Illuminate\Support\ServiceProvider;
 
-class MSGServiceProvider extends ServiceProvider
+class Msg91LaravelServiceProvider extends ServiceProvider
 {
     /**
      * Register the application services.
@@ -14,7 +14,7 @@ class MSGServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // Bind MSG91 Client in Service Container.
+        // Bind Msg91 Client in Service Container.
         $this->app->singleton(Client::class, function ($app) {
             $config  = $app['config'];
             return new Client($config->get('services.msg91'));

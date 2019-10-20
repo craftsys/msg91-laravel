@@ -1,22 +1,22 @@
-# Laravel service provider for MSG91
+# Laravel service provider for Msg91
 
 _This library requires a minimum PHP version of 7.1_
 
-This is a **[laravel](https://laravel.com) service provider** for [MSG91 APIs](https://docs.msg91.com/collection/msg91-api-integration/5/pages/139). It wraps the [msg91-php][client] client and provides the same functionality for Laravel applications by exposing a Service Provider and Facade.
+This is a **[laravel](https://laravel.com) service provider** for [Msg91 APIs](https://docs.msg91.com/collection/msg91-api-integration/5/pages/139). It wraps the [msg91-php][client] client and provides the same functionality for Laravel applications by exposing a Service Provider and Facade.
 
 > **NOTE**: The project is under active development and so, some apis are subjected to change before of `v1.0.0` release.
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Examples](#examples)
-  - [Create a Client](#create-a-client)
-  - [Managing OTPs](#managing-otps)
-    - [Send OTP](#send-otp)
-    - [Verify OTP](#verify-otp)
-    - [Resend OTP](#resend-otp)
+-   [Installation](#installation)
+-   [Configuration](#configuration)
+-   [Usage](#usage)
+-   [Examples](#examples)
+    -   [Create a Client](#create-a-client)
+    -   [Managing OTPs](#managing-otps)
+        -   [Send OTP](#send-otp)
+        -   [Verify OTP](#verify-otp)
+        -   [Resend OTP](#resend-otp)
 
 ## Installation
 
@@ -28,23 +28,23 @@ composer require craftsys/msg91-laravel
 
 ### Laravel 5.5+
 
-If you're using Laravel 5.5 or above, the package will automatically register the `Craftsys\MSG91Client\Laravel\MSG91ServiceProvider` provider and aliases `Craftsys\MSG91Client\Laravel\Facade` facade to `MSG91`.
+If you're using Laravel 5.5 or above, the package will automatically register the `Craftsys\Msg91\Msg91LaravelServiceProvider` provider and aliases `Craftsys\Msg91\Facade\Msg91` facade to `Msg91`.
 
 ### Laravel 5.4 and below
 
-Add `Craftsys\MSG91Client\Laravel\MSG91ServiceProvider` to the `providers` array in your `config/app.php`:
+Add `Craftsys\Msg91\Msg91LaravelServiceProvider` to the `providers` array in your `config/app.php`:
 
 ```php
 'providers' => [
 	 // Other service providers...
-	 Craftsys\MSG91Client\Laravel\MSG91ServiceProvider::class,
+	 Craftsys\Msg91\Msg91LaravelServiceProvider::class,
 ],
 ```
 
 If you want to use the facade interface, you can `use` the facade class when needed:
 
 ```php
-use Craftsys\MSG91Client\Laravel\Facade;
+use Craftsys\Msg91\Facade\Msg91;
 ```
 
 Or add an alias in your `config/app.php`
@@ -52,7 +52,7 @@ Or add an alias in your `config/app.php`
 ```php
 'aliases' => [
 	// other aliases here
-	'MSG91' => Craftsys\MSG91Client\Laravel\Facade::class,
+	'Msg91' => Craftsys\Msg91\Facade\Msg91::class,
 ],
 ```
 
@@ -61,7 +61,7 @@ in an example route or in `php artisan tinker` if you are in Laravel.
 
 ```php
 // this should print an array of some default configuration values
-MSG91::otp()->toArray()
+Msg91::otp()->toArray()
 ```
 
 If there is an issue, please check the steps again or open an issue for support.
@@ -78,21 +78,21 @@ The package can be configured by providing a `msg91` key inside your `config/ser
 return [
 	// along with other services
 	"msg91": [
-		'key' => env("MSG91_KEY"),
+		'key' => env("Msg91_KEY"),
 	],
 ];
 ```
 
-and update the `.env` file to get the desired values e.g. `MSG91_KEY`.
+and update the `.env` file to get the desired values e.g. `Msg91_KEY`.
 
 Please visit [msg91-php configuration][client-configuration] for a detailed description about the available options and their default values.
 
 ## Usage
 
-Once you have [Configured](#configuration) the Laravel/Lumen application to use the service provider and have aliased the facade to `MSG91`, you will have to [msg91-php][client] client `Craftsys\MSG91\Client`'s instance.
+Once you have [Configured](#configuration) the Laravel/Lumen application to use the service provider and have aliased the facade to `Msg91`, you will have to [msg91-php][client] client `Craftsys\Msg91\Client`'s instance.
 
 ```php
-MSG91::otp()
+Msg91::otp()
 	->to(919999999999)
 	->send()
 ```
@@ -118,7 +118,7 @@ MGS91::otp()
 ### Verify OTP
 
 ```php
-MSG91::otp(1234) // OTP to be verified
+Msg91::otp(1234) // OTP to be verified
 	->to(912343434312) // phone number with country code
 	->verify(); // Verify
 ```
@@ -126,7 +126,7 @@ MSG91::otp(1234) // OTP to be verified
 ### Resend OTP
 
 ```php
-MSG91::otp()
+Msg91::otp()
 	->to(912343434312) // set the mobile with country code
 	->via("text") // way of retry
 	->resend(); // resend otp

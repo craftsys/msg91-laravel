@@ -1,8 +1,8 @@
 <?php
 
-namespace Craftsys\MSG91Client\Laravel\Test;
+namespace Craftsys\Tests\Msg91;
 
-use Craftsys\MSG91Client\Client;
+use Craftsys\Msg91\Client;
 
 class ServiceProviderTest extends TestCase
 {

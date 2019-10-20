@@ -1,10 +1,10 @@
 <?php
 
-namespace Craftsys\MSG91Client\Laravel\Test;
+namespace Craftsys\Tests\Msg91;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use Craftsys\MSG91Client\Laravel\MSGServiceProvider;
-use Craftsys\MSG91Client\Laravel\Facade;
+use Craftsys\Msg91\Msg91LaravelServiceProvider as ServiceProvider;
+use Craftsys\Msg91\Facade\Msg91 as Facade;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -18,7 +18,7 @@ abstract class TestCase extends BaseTestCase
     protected function getPackageProviders($app)
     {
         return [
-            MSGServiceProvider::class,
+            ServiceProvider::class,
         ];
     }
 
@@ -32,7 +32,7 @@ abstract class TestCase extends BaseTestCase
     protected function getPackageAliases($app)
     {
         return [
-            'MSG91' => Facade::class
+            'Msg91' => Facade::class
         ];
     }
 }
