@@ -128,7 +128,6 @@ Msg91::otp(1234) // OTP to be verified
 ```php
 Msg91::otp()
 	->to(912343434312) // set the mobile with country code
-	->via("text") // way of retry
 	->resend(); // resend otp
 ```
 
