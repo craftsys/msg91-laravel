@@ -36,8 +36,8 @@ Add `Craftsys\Msg91\Msg91LaravelServiceProvider` to the `providers` array in you
 
 ```php
 'providers' => [
-	 // Other service providers...
-	 Craftsys\Msg91\Msg91LaravelServiceProvider::class,
+     // Other service providers...
+     Craftsys\Msg91\Msg91LaravelServiceProvider::class,
 ],
 ```
 
@@ -51,8 +51,8 @@ Or add an alias in your `config/app.php`
 
 ```php
 'aliases' => [
-	// other aliases here
-	'Msg91' => Craftsys\Msg91\Facade\Msg91::class,
+    // other aliases here
+    'Msg91' => Craftsys\Msg91\Facade\Msg91::class,
 ],
 ```
 
@@ -76,10 +76,10 @@ The package can be configured by providing a `msg91` key inside your `config/ser
 <?php
 
 return [
-	// along with other services
-	"msg91": [
-		'key' => env("Msg91_KEY"),
-	],
+    // along with other services
+    "msg91" => [
+        'key' => env("Msg91_KEY"),
+    ],
 ];
 ```
 
@@ -93,8 +93,8 @@ Once you have [Configured](#configuration) the Laravel/Lumen application to use 
 
 ```php
 Msg91::otp()
-	->to(919999999999)
-	->send()
+    ->to(919999999999)
+    ->send()
 ```
 
 Next, follow along with [examples](#examples) to learn more
@@ -111,33 +111,33 @@ OTP services like sending, verifying, and resending etc, can be accessed via `ot
 
 ```php
 Msg91::otp()
-	->to(912343434312) // phone number with country code
-	->send(); // send the otp
+    ->to(912343434312) // phone number with country code
+    ->send(); // send the otp
 ```
 
 ### Verify OTP
 
 ```php
 Msg91::otp(1234) // OTP to be verified
-	->to(912343434312) // phone number with country code
-	->verify(); // Verify
+    ->to(912343434312) // phone number with country code
+    ->verify(); // Verify
 ```
 
 ### Resend OTP
 
 ```php
 Msg91::otp()
-	->to(912343434312) // set the mobile with country code
-	->resend(); // resend otp
+    ->to(912343434312) // set the mobile with country code
+    ->resend(); // resend otp
 ```
 
 ## Sending SMS
 
 ```php
 Msg91::sms()
-	->to(912343434312) // set the mobile with country code
-	->message("Your message here"); // provide your message
-	->send(); // send
+    ->to(912343434312) // set the mobile with country code
+    ->message("Your message here"); // provide your message
+    ->send(); // send
 ```
 
 > For all the examples and options, please consult [msg91-php examples section][client-examples]
