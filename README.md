@@ -131,6 +131,15 @@ Msg91::otp()
 	->resend(); // resend otp
 ```
 
+## Sending SMS
+
+```php
+Msg91::sms()
+	->to(912343434312) // set the mobile with country code
+	->message("Your message here"); // provide your message
+	->send(); // send
+```
+
 > For all the examples and options, please consult [msg91-php examples section][client-examples]
 
 [client]: https://github.com/craftsys/msg91-php
