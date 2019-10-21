@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Facade;
 /**
  * Facade for Craftsys\Msg91\Client
  *
- * @method static \Craftsys\Msg91\OTPMessage otp(int|null $otp = null)
+ * @method static \Craftsys\Msg91\Services\OTPService otp(mixed $otp = null)
+ * @method static \Craftsys\Msg91\Services\SMSService sms(mixed $otp = null)
  */
 class Msg91 extends Facade
 {

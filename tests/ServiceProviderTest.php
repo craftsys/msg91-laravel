@@ -19,7 +19,7 @@ class ServiceProviderTest extends TestCase
     }
 
     /**
-     * Test that we can create the Nexmo client
+     * Test that we can create the Msg91 client
      * from container binding.
      *
      * @return void

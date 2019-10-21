@@ -25,7 +25,7 @@
     },
     "require": {
         "php": ">=7.1",
-        "craftsys/msg91-php": "^0.5",
+        "craftsys/msg91-php": "^0.6",
         "illuminate/support": "^5.2|^6.0"
     },
     "require-dev": {

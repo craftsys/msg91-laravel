@@ -60,8 +60,8 @@ To verify that everything is working as expected, excecute the following php cod
 in an example route or in `php artisan tinker` if you are in Laravel.
 
 ```php
-// this should print an array of some default configuration values
-Msg91::otp()->toArray()
+// this should print the `\Craftsys\Msg91\Services\OTPService` of some default configuration values
+echo Msg91::otp()::class
 ```
 
 If there is an issue, please check the steps again or open an issue for support.
