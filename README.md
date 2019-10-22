@@ -17,6 +17,8 @@ This is a **[laravel](https://laravel.com) service provider** for [Msg91 APIs](h
         -   [Send OTP](#send-otp)
         -   [Verify OTP](#verify-otp)
         -   [Resend OTP](#resend-otp)
+    -   [Sending SMS](#sending-sms)
+    -   [Handling Error Responses](#error-responses)
 
 ## Installation
 
@@ -138,6 +140,23 @@ Msg91::sms()
     ->to(912343434312) // set the mobile with country code
     ->message("Your message here"); // provide your message
     ->send(); // send
+```
+
+## Error Responses
+
+All the services will return `\Craftsys\Msg91\Response` instance for all successfully responses or will throw exceptions if request validation failed (`\Craftsys\Msg91\Exceptions\ValidationException`)or there was an error in the response (`\Craftsys\Msg91\Exceptions\ResponseErrorException`).
+
+```php
+try {
+    $response = $client->otp()->to(919999999999)->send();
+} catch (\Craftsys\Msg91\Exceptions\ValidationException $e) {
+    // issue with the request e.g. token not provided
+} catch (\Craftsys\Msg91\Exceptions\ResponseErrorException $e) {
+    // error thrown by msg91 apis or by http client
+} catch (\Exception $e) {
+    // something else went wrong
+    // plese report if this happens :)
+}
 ```
 
 > For all the examples and options, please consult [msg91-php examples section][client-examples]
