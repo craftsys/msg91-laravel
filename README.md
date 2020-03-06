@@ -1,7 +1,5 @@
 # Laravel service provider for Msg91
 
-_This library requires a minimum PHP version of 7.1_
-
 This is a **[laravel](https://laravel.com) service provider** for [Msg91 APIs](https://docs.msg91.com/collection/msg91-api-integration/5/pages/139). It wraps the [msg91-php][client] client and provides the same functionality for Laravel applications by exposing a Service Provider and Facade.
 
 > **NOTE**: The project is under active development and so, some apis are subjected to change before of `v1.0.0` release.
