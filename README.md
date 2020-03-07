@@ -26,6 +26,13 @@ The packages is available on [Packagist](https://packagist.org/packages/craftsys
 composer require craftsys/msg91-laravel
 ```
 
+**prerequisite**
+
+-   php^7.1
+-   laravel^5|^6|^7
+
+The package is tested for 5.8+,^6.0,^7.0 only. If you find any bugs for laravel (5.0< >5.8), please file an issue.
+
 ### Laravel 5.5+
 
 If you're using Laravel 5.5 or above, the package will automatically register the `Craftsys\Msg91\Msg91LaravelServiceProvider` provider and aliases `Craftsys\Msg91\Facade\Msg91` facade to `Msg91`.
