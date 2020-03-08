@@ -16,7 +16,9 @@ This is a **[laravel](https://laravel.com) service provider** for [Msg91 APIs](h
         -   [Verify OTP](#verify-otp)
         -   [Resend OTP](#resend-otp)
     -   [Sending SMS](#sending-sms)
-    -   [Handling Error Responses](#error-responses)
+    -   [Handling Responses](#handling-responses)
+-   [Related](#related)
+-   [Acknowledgements](#acknowledgements)
 
 ## Installation
 
@@ -147,7 +149,7 @@ Msg91::sms()
     ->send(); // send
 ```
 
-## Error Responses
+## Handling Responses
 
 All the services will return `\Craftsys\Msg91\Response` instance for all successfully responses or will throw exceptions if request validation failed (`\Craftsys\Msg91\Exceptions\ValidationException`)or there was an error in the response (`\Craftsys\Msg91\Exceptions\ResponseErrorException`).
 
@@ -170,3 +172,16 @@ try {
 [client-configuration]: https://github.com/craftsys/msg91-php#configuration
 [client-examples]: https://github.com/craftsys/msg91-php#examples
 [client-managing-otps]: https://github.com/craftsys/msg91-php#managing-otps
+
+
+# Related
+
+- [Msg91 Laravel Notification Channel](https://github.com/craftsys/msg91-laravel-notification-channel)
+- [Msg91 Php Client](https://github.com/craftsys/msg91-php)
+- [Msg91 Api Docs](https://docs.msg91.com/collection/msg91-api-integration/5/pages/139)
+
+# Acknowledgements
+
+We are grateful to the authors of existing related projects for their ideas and collaboration:
+
+- [Laravel Nexmo](https://github.com/Nexmo/nexmo-laravel)
