@@ -1,3 +1,10 @@
+## [0.7.2](https://github.com/craftsys/msg91-laravel/compare/v0.7.1...v0.7.2) (2020-06-02)
+
+
+### Bug Fixes
+
+* **resend-otp:** broken url ([f054258](https://github.com/craftsys/msg91-laravel/commit/f0542581b48d43c8872f830a8779abf46bf8c0aa))
+
 ## [0.7.1](https://github.com/craftsys/msg91-laravel/compare/v0.7.0...v0.7.1) (2020-03-06)
 
 
