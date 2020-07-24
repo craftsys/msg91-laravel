@@ -98,7 +98,7 @@ Please visit [msg91-php configuration][client-configuration] for a detailed desc
 
 ## Usage
 
-Once you have [Configured](#configuration) the Laravel/Lumen application to use the service provider and have aliased the facade to `Msg91`, you will have to [msg91-php][client] client `Craftsys\Msg91\Client`'s instance.
+Once you have [Configured](#configuration) the Laravel/Lumen application to use the service provider and have aliased the facade to `Msg91`, you will have a [msg91-php][client] client (Craftsys\Msg91\Client) instance.
 
 ```php
 Msg91::otp()
