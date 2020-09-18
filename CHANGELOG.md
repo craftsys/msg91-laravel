@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/craftsys/msg91-laravel/compare/v0.7.2...v0.8.0) (2020-09-18)
+
+
+### Features
+
+* **laravel-8:** add support for Laravel 8 ([1046bca](https://github.com/craftsys/msg91-laravel/commit/1046bca65a8820273684890ffbbc0c09a9403db2))
+
 ## [0.7.2](https://github.com/craftsys/msg91-laravel/compare/v0.7.1...v0.7.2) (2020-06-02)
 
 
