@@ -1,3 +1,10 @@
+# [0.10.0](https://github.com/craftsys/msg91-laravel/compare/v0.9.1...v0.10.0) (2020-09-29)
+
+
+### Features
+
+* **deps:**  get the latest msg91-php client ([14e9993](https://github.com/craftsys/msg91-laravel/commit/14e99931dd530b47b868bf029413377a21a03575))
+
 ## [0.9.1](https://github.com/craftsys/msg91-laravel/compare/v0.9.0...v0.9.1) (2020-09-29)
 
 
