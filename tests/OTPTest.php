@@ -14,6 +14,11 @@ class OTPTest extends TestCase
 {
     protected $container = [];
 
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->container = [];
+    }
     /**
      * Define environment setup.
      *
@@ -40,7 +45,6 @@ class OTPTest extends TestCase
 
         // make sure there was exacly on request
         $this->assertCount(1, $this->container);
-        $this->container = [];
     }
 
     public function test_resend_otp()
@@ -58,7 +62,6 @@ class OTPTest extends TestCase
 
         // make sure there was exacly on request
         $this->assertCount(1, $this->container);
-        $this->container = [];
     }
 
     public function test_verify_otp()
@@ -75,7 +78,6 @@ class OTPTest extends TestCase
 
         // make sure there was exacly on request
         $this->assertCount(1, $this->container);
-        $this->container = [];
     }
 
     protected function createMockHttpClient(

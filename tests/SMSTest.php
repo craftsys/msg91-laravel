@@ -14,6 +14,12 @@ class SMSTest extends TestCase
 {
     protected $container = [];
 
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->container = [];
+    }
+
     /**
      * Define environment setup.
      *
@@ -42,7 +48,6 @@ class SMSTest extends TestCase
 
         // make sure there was exacly on request
         $this->assertCount(1, $this->container);
-        $this->container = [];
     }
 
     protected function createMockHttpClient(
