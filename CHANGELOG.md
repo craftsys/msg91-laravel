@@ -1,3 +1,10 @@
+# [0.9.0](https://github.com/craftsys/msg91-laravel/compare/v0.8.0...v0.9.0) (2020-09-29)
+
+
+### Features
+
+* **docs:** update docs to include basic examples ([19204f3](https://github.com/craftsys/msg91-laravel/commit/19204f30c3a221c77d4a7dd97fa7bec10b4d0901))
+
 # [0.8.0](https://github.com/craftsys/msg91-laravel/compare/v0.7.2...v0.8.0) (2020-09-18)
 
 
