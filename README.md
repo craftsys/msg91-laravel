@@ -103,12 +103,34 @@ Please visit [msg91-php configuration][client-configuration] for a detailed desc
 Once you have [Configured](#configuration) the Laravel/Lumen application to use the service provider and have aliased the facade to `Msg91`, you will have a [msg91-php][client] client (Craftsys\Msg91\Client) instance.
 
 ```php
-Msg91::otp()
-    ->to(919999999999)
-    ->send()
+// send otp
+Msg91::otp()->to(919999999999)->send();
+
+// resend otp
+Msg91::otp()->to(919999999999)->viaVoice()->resend();
+
+// verify otp
+Msg91::otp(678612)->to(919999999999)->verify();
+
+// send sms
+Msg91::sms()->to(919999999999)->flow('<flow_id>')->send();
+
+// in bulk
+Msg91::sms()->to([919999999999, 918899898990])->flow('<flow_id>')->send();
+
+// with variables in your flow template
+Msg91::sms()->to([919999999999, 918899898990])->flow('<flow_id>')->variable('variable_name', 'value')->send();
+
+// with variables per recipient
+Msg91::sms()->recipients([
+  ['mobiles' => 919999999999, 'name' => 'Sudhir M'],
+  ['mobiles' => 918899898990, 'name' => 'Craft Sys']
+])
+  ->flow('<flow_id>')
+  ->send();
 ```
 
-Next, follow along with [examples](#examples) to learn more
+Follow along with [examples](#examples) to learn more
 
 ## Examples
 
