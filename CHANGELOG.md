@@ -1,3 +1,10 @@
+## [0.9.1](https://github.com/craftsys/msg91-laravel/compare/v0.9.0...v0.9.1) (2020-09-29)
+
+
+### Bug Fixes
+
+* **tests:** add test for opt and sms ([dd934f8](https://github.com/craftsys/msg91-laravel/commit/dd934f83ec4ef8f17d706731f5508a6cdf73da0c))
+
 # [0.9.0](https://github.com/craftsys/msg91-laravel/compare/v0.8.0...v0.9.0) (2020-09-29)
 
 
