@@ -16,6 +16,8 @@ This is a **[laravel](https://laravel.com) service provider** for [Msg91 APIs](h
         -   [Verify OTP](#verify-otp)
         -   [Resend OTP](#resend-otp)
     -   [Sending SMS](#sending-sms)
+        - [Bulk SMS](#bulk-sms)
+        - [Message Variables](#message-variables)
     -   [Handling Responses](#handling-responses)
 -   [Related](#related)
 -   [Acknowledgements](#acknowledgements)
@@ -31,9 +33,9 @@ composer require craftsys/msg91-laravel
 **prerequisite**
 
 -   php^7.1
--   laravel^5|^6|^7
+-   laravel^5|^6|^7|^8
 
-The package is tested for 5.8+,^6.0,^7.0 only. If you find any bugs for laravel (5.0< >5.8), please file an issue.
+The package is tested for 5.8+,^6.0,^7.0,^8.0 only. If you find any bugs for laravel (5.0< >5.8), please file an issue.
 
 ### Laravel 5.5+
 
@@ -69,7 +71,7 @@ To verify that everything is working as expected, excecute the following php cod
 in an example route or in `php artisan tinker` if you are in Laravel.
 
 ```php
-// this should print the `\Craftsys\Msg91\Services\OTPService` of some default configuration values
+// this should print the `\Craftsys\Msg91\OTP\OTPService` of some default configuration values
 echo Msg91::otp()::class
 ```
 
@@ -85,10 +87,10 @@ The package can be configured by providing a `msg91` key inside your `config/ser
 <?php
 
 return [
-    // along with other services
-    "msg91" => [
-        'key' => env("Msg91_KEY"),
-    ],
+  // along with other services
+  "msg91" => [
+    'key' => env("Msg91_KEY"),
+  ],
 ];
 ```
 
@@ -121,6 +123,7 @@ OTP services like sending, verifying, and resending etc, can be accessed via `ot
 ```php
 Msg91::otp()
     ->to(912343434312) // phone number with country code
+    ->template('your_template_id') // set the otp template
     ->send(); // send the otp
 ```
 
@@ -137,6 +140,7 @@ Msg91::otp(1234) // OTP to be verified
 ```php
 Msg91::otp()
     ->to(912343434312) // set the mobile with country code
+    ->viaVoice() // set the otp sending method (can be "viaText" as well)
     ->resend(); // resend otp
 ```
 
@@ -145,13 +149,47 @@ Msg91::otp()
 ```php
 Msg91::sms()
     ->to(912343434312) // set the mobile with country code
-    ->message("Your message here"); // provide your message
+    ->flow("your_flow_id_here") // set the flow id
     ->send(); // send
 ```
 
+### Bulk SMS
+
+```
+Msg91::sms()
+    ->to([912343434312, 919898889892]) // set the mobiles with country code
+    ->flow("your_flow_id_here") // set the flow id
+    ->send(); // send
+```
+
+### Message Variables
+
+```
+// send in bulk with variables    
+Msg91::sms()
+    ->to([912343434312, 919898889892]) // set the mobiles with country code
+    ->flow("your_flow_id_here") // set the flow id
+    ->variable('date', "Sunday") // the the value for variable "date" in your flow message template
+    ->send(); // send
+    
+// send in bulk with variables per recipient
+Msg91::sms()
+    ->to([912343434312, 919898889892]) // set the mobiles with country code
+    ->flow("your_flow_id_here") // set the flow id
+    ->recipients([
+      ['mobiles' => 919999223345, 'name' => 'Sudhir M'],
+      ['mobiles' => 912929223345, 'name' => 'Craft Sys']
+    ])
+    // (optionally) set a "date" variable for all the recipients
+    ->variable('date', "Sunday")
+    ->send(); // send
+```
+
+> For a detailed usage and options, please visit [msg91-php's documentation][client-sending-sms] on sending SMSs. 
+
 ## Handling Responses
 
-All the services will return `\Craftsys\Msg91\Response` instance for all successfully responses or will throw exceptions if request validation failed (`\Craftsys\Msg91\Exceptions\ValidationException`)or there was an error in the response (`\Craftsys\Msg91\Exceptions\ResponseErrorException`).
+All the services will return `\Craftsys\Msg91\Support\Response` instance for all successfully responses or will throw exceptions if request validation failed (`\Craftsys\Msg91\Exceptions\ValidationException`)or there was an error in the response (`\Craftsys\Msg91\Exceptions\ResponseErrorException`).
 
 ```php
 try {
@@ -172,6 +210,7 @@ try {
 [client-configuration]: https://github.com/craftsys/msg91-php#configuration
 [client-examples]: https://github.com/craftsys/msg91-php#examples
 [client-managing-otps]: https://github.com/craftsys/msg91-php#managing-otps
+[client-sending-sms]: https://github.com/craftsys/msg91-php#sending-sms
 
 
 # Related
