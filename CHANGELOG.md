@@ -1,3 +1,10 @@
+## [0.11.1](https://github.com/craftsys/msg91-laravel/compare/v0.11.0...v0.11.1) (2020-09-30)
+
+
+### Bug Fixes
+
+* **variables:** merging sms options remove variables ([af4ec6b](https://github.com/craftsys/msg91-laravel/commit/af4ec6b5f3899468ea67d0727613e75f43dee268))
+
 # [0.11.0](https://github.com/craftsys/msg91-laravel/compare/v0.10.0...v0.11.0) (2020-09-29)
 
 
