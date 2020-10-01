@@ -1,6 +1,6 @@
 {
     "name": "craftsys/msg91-laravel",
-    "description": "Laravel service provider for Msg91 apis.",
+    "description": "Laravel service provider for Msg91 apis to Send OTPs, Verify OTPs, Resend OTPs, Send SMS (Short Message) etc",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -15,7 +15,11 @@
         "msg91",
         "php",
         "laravel",
-        "otp"
+        "otp",
+        "sms",
+        "verify otp",
+        "resend otp",
+        "short message"
     ],
     "homepage": "https://github.com/craftsys/msg91-laravel",
     "support": {
@@ -63,5 +67,8 @@
     },
     "scripts": {
         "test": "phpunit  --colors=always"
+    },
+    "suggest": {
+        "craftsys/msg91-laravel-notification-channel": "Easily send sms/otp notifications via msg91 channel"
     }
 }
