@@ -177,7 +177,7 @@ Msg91::sms()
 
 ### Bulk SMS
 
-```
+```php
 Msg91::sms()
     ->to([912343434312, 919898889892]) // set the mobiles with country code
     ->flow("your_flow_id_here") // set the flow id
@@ -186,7 +186,7 @@ Msg91::sms()
 
 ### Message Variables
 
-```
+```php
 // send in bulk with variables    
 Msg91::sms()
     ->to([912343434312, 919898889892]) // set the mobiles with country code
