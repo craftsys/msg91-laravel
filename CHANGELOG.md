@@ -1,3 +1,10 @@
+## [0.11.2](https://github.com/craftsys/msg91-laravel/compare/v0.11.1...v0.11.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* **verify-otp:** verification not working ([1466aaf](https://github.com/craftsys/msg91-laravel/commit/1466aaf2fdd12b547f3f74b841dc1ceb3afcfb02)), closes [#5](https://github.com/craftsys/msg91-laravel/issues/5)
+
 ## [0.11.1](https://github.com/craftsys/msg91-laravel/compare/v0.11.0...v0.11.1) (2020-09-30)
 
 
