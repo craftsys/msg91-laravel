@@ -29,7 +29,7 @@
     },
     "require": {
         "php": "^7.1.3",
-        "craftsys/msg91-php": "^0.14.1",
+        "craftsys/msg91-php": "^0.14.2",
         "illuminate/support": "^5.2|^6.0|^7.0|^8.0"
     },
     "require-dev": {
