@@ -1,5 +1,15 @@
 # Laravel service provider for Msg91
 
+
+<p>
+<a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/dt/craftsys/msg91-laravel" alt="Total Downloads" /></a>
+<a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/v/craftsys/msg91-laravel" alt="Latest Stable Version" /></a>
+<a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/l/craftsys/msg91-laravel" alt="License" /></a>
+<a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/github/workflow/status/craftsys/msg91-laravel/tests" alt="Status" /></a>
+</p>
+
+
+
 This is a **[laravel](https://laravel.com) service provider** for [Msg91 APIs](https://docs.msg91.com/collection/msg91-api-integration/5/pages/139). It wraps the [msg91-php][client] client and provides the same functionality for Laravel applications by exposing a Service Provider and Facade.
 
 > **NOTE**: The project is under active development and so, some apis are subjected to change before of `v1.0.0` release.
