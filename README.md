@@ -3,9 +3,9 @@
 
 <p>
 <a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/dt/craftsys/msg91-laravel" alt="Total Downloads" /></a>
-<a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/v/craftsys/msg91-laravel" alt="Latest Stable Version" /></a>
+<a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/v/craftsys/msg91-laravel?label=version" alt="Latest Stable Version" /></a>
 <a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/l/craftsys/msg91-laravel" alt="License" /></a>
-<a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/github/workflow/status/craftsys/msg91-laravel/tests" alt="Status" /></a>
+<a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/github/workflow/status/craftsys/msg91-laravel/tests?label=tests" alt="Status" /></a>
 </p>
 
 
@@ -20,7 +20,6 @@ This is a **[laravel](https://laravel.com) service provider** for [Msg91 APIs](h
 -   [Configuration](#configuration)
 -   [Usage](#usage)
 -   [Examples](#examples)
-    -   [Create a Client](#create-a-client)
     -   [Managing OTPs](#managing-otps)
         -   [Send OTP](#send-otp)
         -   [Verify OTP](#verify-otp)
