@@ -1,3 +1,10 @@
+# [0.12.0](https://github.com/craftsys/msg91-laravel/compare/v0.11.2...v0.12.0) (2020-11-11)
+
+
+### Features
+
+* **php8:** add php 8 support ([#6](https://github.com/craftsys/msg91-laravel/issues/6)) ([1105479](https://github.com/craftsys/msg91-laravel/commit/1105479442ddb591e80725afb8f5c646dea4d365))
+
 ## [0.11.2](https://github.com/craftsys/msg91-laravel/compare/v0.11.1...v0.11.2) (2020-10-20)
 
 
