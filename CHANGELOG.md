@@ -1,3 +1,10 @@
+## [0.12.1](https://github.com/craftsys/msg91-laravel/compare/v0.12.0...v0.12.1) (2021-03-23)
+
+
+### Bug Fixes
+
+* **otp-resend:** update patch from msg91-php ([#8](https://github.com/craftsys/msg91-laravel/issues/8)) ([b7014ae](https://github.com/craftsys/msg91-laravel/commit/b7014aee436da4ca42a3ed16ac65b3e71bcdc982))
+
 # [0.12.0](https://github.com/craftsys/msg91-laravel/compare/v0.11.2...v0.12.0) (2020-11-11)
 
 
