@@ -1,3 +1,10 @@
+# [0.13.0](https://github.com/craftsys/msg91-laravel/compare/v0.12.1...v0.13.0) (2021-04-07)
+
+
+### Features
+
+* **octane:** add laravel/octane compatibility ([#10](https://github.com/craftsys/msg91-laravel/issues/10)) ([5565d2a](https://github.com/craftsys/msg91-laravel/commit/5565d2a50f8bbddeb5905eadc7ead3805a1d82ea))
+
 ## [0.12.1](https://github.com/craftsys/msg91-laravel/compare/v0.12.0...v0.12.1) (2021-03-23)
 
 
