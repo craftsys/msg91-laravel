@@ -15,7 +15,7 @@ class Msg91LaravelServiceProvider extends ServiceProvider
     public function register()
     {
         // Bind Msg91 Client in Service Container.
-        $this->app->singleton(Client::class, function ($app) {
+        $this->app->bind(Client::class, function ($app) {
             $config  = $app['config'];
             return new Client($config->get('services.msg91'));
         });
