@@ -1,3 +1,10 @@
+## [0.13.1](https://github.com/craftsys/msg91-laravel/compare/v0.13.0...v0.13.1) (2021-08-30)
+
+
+### Bug Fixes
+
+* **php8:** take latest fix from msg91-php ([d47014e](https://github.com/craftsys/msg91-laravel/commit/d47014e372e726e70f514f91795b236cd42f8e83))
+
 # [0.13.0](https://github.com/craftsys/msg91-laravel/compare/v0.12.1...v0.13.0) (2021-04-07)
 
 
