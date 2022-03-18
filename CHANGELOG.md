@@ -1,3 +1,10 @@
+## [0.13.2](https://github.com/craftsys/msg91-laravel/compare/v0.13.1...v0.13.2) (2022-03-18)
+
+
+### Bug Fixes
+
+* **release:** add new release ([6e0ef5b](https://github.com/craftsys/msg91-laravel/commit/6e0ef5baf4d765e624ed6ae7401d2b2e8080f5df))
+
 ## [0.13.1](https://github.com/craftsys/msg91-laravel/compare/v0.13.0...v0.13.1) (2021-08-30)
 
 
