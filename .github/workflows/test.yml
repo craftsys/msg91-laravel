@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        php: [7.1, 7.2, 7.3, 7.4, 8.0]
+        php: [7.1, 7.2, 7.3, 7.4, 8.0, 8.1, 8.2]
         laravel: [5.8.*, ^6.0, ^7.0, ^8.0, ^9.0]
         exclude:
           - php: 7.1
@@ -21,12 +21,6 @@ jobs:
             laravel: ^8.0
           - php: 7.2
             laravel: ^8.0
-          - php: 8.0
-            laravel: 5.8.*
-          - php: 8.0
-            laravel: ^6.0
-          - php: 8.0
-            laravel: ^7.0
           - php: 7.1
             laravel: ^9.0
           - php: 7.2
@@ -35,7 +29,25 @@ jobs:
             laravel: ^9.0
           - php: 7.4
             laravel: ^9.0
-
+          - php: 8.0
+            laravel: 5.8.*
+          - php: 8.0
+            laravel: ^6.0
+          - php: 8.0
+            laravel: ^7.0
+          - php: 8.1
+            laravel: 5.8.*
+          - php: 8.1
+            laravel: ^6.0
+          - php: 8.1
+            laravel: ^7.0
+          - php: 8.2
+            laravel: 5.8.*
+          - php: 8.2
+            laravel: ^6.0
+          - php: 8.2
+            laravel: ^7.0           
+            
     name: P${{ matrix.php }} - L${{ matrix.laravel }}
 
     steps:
