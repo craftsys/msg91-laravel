@@ -1,3 +1,10 @@
+## [0.13.3](https://github.com/craftsys/msg91-laravel/compare/v0.13.2...v0.13.3) (2023-01-17)
+
+
+### Bug Fixes
+
+* **php-dep:** use the latest php client ([49c4f93](https://github.com/craftsys/msg91-laravel/commit/49c4f93c6858999c9b49cc241246ca97f676a427)), closes [#14](https://github.com/craftsys/msg91-laravel/issues/14)
+
 ## [0.13.2](https://github.com/craftsys/msg91-laravel/compare/v0.13.1...v0.13.2) (2022-03-18)
 
 
