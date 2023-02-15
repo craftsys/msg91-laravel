@@ -1,3 +1,10 @@
+# [0.14.0](https://github.com/craftsys/msg91-laravel/compare/v0.13.3...v0.14.0) (2023-02-15)
+
+
+### Features
+
+* **L10:** update for laravel 10 ([231d326](https://github.com/craftsys/msg91-laravel/commit/231d3266b08998902ec3a4a649222803536fbf34))
+
 ## [0.13.3](https://github.com/craftsys/msg91-laravel/compare/v0.13.2...v0.13.3) (2023-01-17)
 
 
