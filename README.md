@@ -12,7 +12,6 @@
 
 This is a **[laravel](https://laravel.com) service provider** for [Msg91 APIs](https://docs.msg91.com/collection/msg91-api-integration/5/pages/139). It wraps the [msg91-php][client] client and provides the same functionality for Laravel applications by exposing a Service Provider and Facade.
 
-> **NOTE**: The project is under active development and so, some apis are subjected to change before of `v1.0.0` release.
 
 ## Table of Contents
 
@@ -42,9 +41,9 @@ composer require craftsys/msg91-laravel
 **prerequisite**
 
 -   php^7.1
--   laravel^5|^6|^7|^8|^9
+-   laravel^5|^6|^7|^8|^9|^10
 
-The package is tested for 5.8+,^6.0,^7.0,^8.0,^9.0 only. If you find any bugs for laravel (5.0< >5.8), please file an issue.
+The package is tested for 5.8+,^6.0,^7.0,^8.0,^9.0,^10.0 only. If you find any bugs for laravel (5.0< >5.8), please file an issue.
 
 ### Laravel 5.5+
 
