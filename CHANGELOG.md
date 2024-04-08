@@ -1,3 +1,10 @@
+# [0.15.0](https://github.com/craftsys/msg91-laravel/compare/v0.14.0...v0.15.0) (2024-04-08)
+
+
+### Features
+
+* **l11:** laravel 11.x compatibility ([0c6839e](https://github.com/craftsys/msg91-laravel/commit/0c6839e1edc9b59b67996a78b68143c575e5f553))
+
 # [0.14.0](https://github.com/craftsys/msg91-laravel/compare/v0.13.3...v0.14.0) (2023-02-15)
 
 
