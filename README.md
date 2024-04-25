@@ -5,7 +5,7 @@
 <a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/dt/craftsys/msg91-laravel" alt="Total Downloads" /></a>
 <a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/v/craftsys/msg91-laravel?label=version" alt="Latest Stable Version" /></a>
 <a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/l/craftsys/msg91-laravel" alt="License" /></a>
-<a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/github/workflow/status/craftsys/msg91-laravel/tests?label=tests" alt="Status" /></a>
+<a href="https://github.com/craftsys/msg91-laravel/actions/workflows/test.yml"><img src="https://github.com/craftsys/msg91-laravel/actions/workflows/test.yml/badge.svg" alt="Status" /></a>
 </p>
 
 
