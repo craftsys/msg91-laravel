@@ -1,3 +1,10 @@
+## [0.15.1](https://github.com/craftsys/msg91-laravel/compare/v0.15.0...v0.15.1) (2024-10-17)
+
+
+### Bug Fixes
+
+* **php82:** take change from base package ([#18](https://github.com/craftsys/msg91-laravel/issues/18)) ([bc794fd](https://github.com/craftsys/msg91-laravel/commit/bc794fd1a3ee9df294d01d3eaa859ec9f4483efa))
+
 # [0.15.0](https://github.com/craftsys/msg91-laravel/compare/v0.14.0...v0.15.0) (2024-04-08)
 
 
