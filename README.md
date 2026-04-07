@@ -40,10 +40,10 @@ composer require craftsys/msg91-laravel
 
 **prerequisite**
 
--   php^7.1
--   laravel^5|^6|^7|^8|^9|^10
+-   php^7.1|^8.0|^8.1|^8.2|^8.3
+-   laravel^5|^6|^7|^8|^9|^10|^11|^12
 
-The package is tested for 5.8+,^6.0,^7.0,^8.0,^9.0,^10.0 only. If you find any bugs for laravel (5.0< >5.8), please file an issue.
+The package is tested for 5.8+, ^6.0, ^7.0, ^8.0, ^9.0, ^10.0, ^11.0, and ^12.0. If you find any bugs for Laravel versions between 5.0 and 5.8, please file an issue.
 
 ### Laravel 5.5+
 
