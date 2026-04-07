@@ -1,3 +1,10 @@
+## [0.15.2](https://github.com/craftsys/msg91-laravel/compare/v0.15.1...v0.15.2) (2026-04-07)
+
+
+### Bug Fixes
+
+* **L12:** add support for laravel 12 ([f37d51e](https://github.com/craftsys/msg91-laravel/commit/f37d51eb0e8794aa46250a3f58b5308173f05933))
+
 ## [0.15.1](https://github.com/craftsys/msg91-laravel/compare/v0.15.0...v0.15.1) (2024-10-17)
 
 
