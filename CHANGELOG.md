@@ -1,3 +1,10 @@
+# [0.16.0](https://github.com/craftsys/msg91-laravel/compare/v0.15.2...v0.16.0) (2026-04-07)
+
+
+### Features
+
+* **php83:** add support for php 8.3 ([#23](https://github.com/craftsys/msg91-laravel/issues/23)) ([2f94ac3](https://github.com/craftsys/msg91-laravel/commit/2f94ac399e3ac0d46b984d1118b027b55bfb52bc))
+
 ## [0.15.2](https://github.com/craftsys/msg91-laravel/compare/v0.15.1...v0.15.2) (2026-04-07)
 
 
