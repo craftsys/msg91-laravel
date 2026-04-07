@@ -32,18 +32,19 @@ This is a **[laravel](https://laravel.com) service provider** for [Msg91 APIs](h
 
 ## Installation
 
-The packages is available on [Packagist](https://packagist.org/packages/craftsys/msg91-laravel) and can be installed via [Composer](https://getcomposer.org/) by executing following command in shell.
+The package is available on [Packagist](https://packagist.org/packages/craftsys/msg91-laravel) and can be installed via [Composer](https://getcomposer.org/) by running the following command.
 
 ```bash
 composer require craftsys/msg91-laravel
 ```
 
-**prerequisite**
+**Prerequisites**
 
--   php^7.1
--   laravel^5|^6|^7|^8|^9|^10
+- PHP `^7.1`
+- Laravel `^5.2|^6|^7|^8|^9|^10|^11|^12|^13`
 
-The package is tested for 5.8+,^6.0,^7.0,^8.0,^9.0,^10.0 only. If you find any bugs for laravel (5.0< >5.8), please file an issue.
+The package is tested on Laravel `5.8`, `^6.0`, `^7.0`, `^8.0`, `^9.0`, `^10.0`, `11.*`, `12.*`, and `13.*`.
+If you find any bugs for older 5.x versions (`>=5.2` and `<5.8`), please file an issue.
 
 ### Laravel 5.5+
 
