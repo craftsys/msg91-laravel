@@ -1,6 +1,5 @@
 # Laravel service provider for Msg91
 
-
 <p>
 <a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/dt/craftsys/msg91-laravel" alt="Total Downloads" /></a>
 <a href="https://packagist.org/packages/craftsys/msg91-laravel"><img src="https://img.shields.io/packagist/v/craftsys/msg91-laravel?label=version" alt="Latest Stable Version" /></a>
@@ -8,42 +7,40 @@
 <a href="https://github.com/craftsys/msg91-laravel/actions/workflows/test.yml"><img src="https://github.com/craftsys/msg91-laravel/actions/workflows/test.yml/badge.svg" alt="Status" /></a>
 </p>
 
-
-
 This is a **[laravel](https://laravel.com) service provider** for [Msg91 APIs](https://docs.msg91.com/collection/msg91-api-integration/5/pages/139). It wraps the [msg91-php][client] client and provides the same functionality for Laravel applications by exposing a Service Provider and Facade.
-
 
 ## Table of Contents
 
--   [Installation](#installation)
--   [Configuration](#configuration)
--   [Usage](#usage)
--   [Examples](#examples)
-    -   [Managing OTPs](#managing-otps)
-        -   [Send OTP](#send-otp)
-        -   [Verify OTP](#verify-otp)
-        -   [Resend OTP](#resend-otp)
-    -   [Sending SMS](#sending-sms)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Examples](#examples)
+    - [Managing OTPs](#managing-otps)
+        - [Send OTP](#send-otp)
+        - [Verify OTP](#verify-otp)
+        - [Resend OTP](#resend-otp)
+    - [Sending SMS](#sending-sms)
         - [Bulk SMS](#bulk-sms)
         - [Message Variables](#message-variables)
-    -   [Handling Responses](#handling-responses)
--   [Related](#related)
--   [Acknowledgements](#acknowledgements)
+    - [Handling Responses](#handling-responses)
+- [Related](#related)
+- [Acknowledgements](#acknowledgements)
 
 ## Installation
 
-The packages is available on [Packagist](https://packagist.org/packages/craftsys/msg91-laravel) and can be installed via [Composer](https://getcomposer.org/) by executing following command in shell.
+The package is available on [Packagist](https://packagist.org/packages/craftsys/msg91-laravel) and can be installed via [Composer](https://getcomposer.org/) by running the following command.
 
 ```bash
 composer require craftsys/msg91-laravel
 ```
 
-**prerequisite**
+**Prerequisites**
 
--   php^7.1|^8.0|^8.1|^8.2|^8.3
--   laravel^5|^6|^7|^8|^9|^10|^11|^12
+- PHP `^7.1`
+- Laravel `^5.2|^6|^7|^8|^9|^10|^11|^12|^13`
 
-The package is tested for 5.8+, ^6.0, ^7.0, ^8.0, ^9.0, ^10.0, ^11.0, and ^12.0. If you find any bugs for Laravel versions between 5.0 and 5.8, please file an issue.
+The package is tested on Laravel `5.8`, `^6.0`, `^7.0`, `^8.0`, `^9.0`, `^10.0`, `11.*`, `12.*`, and `13.*`.
+If you find any bugs for older 5.x versions (`>=5.2` and `<5.8`), please file an issue.
 
 ### Laravel 5.5+
 
@@ -195,13 +192,13 @@ Msg91::sms()
 ### Message Variables
 
 ```php
-// send in bulk with variables    
+// send in bulk with variables
 Msg91::sms()
     ->to([912343434312, 919898889892]) // set the mobiles with country code
     ->flow("your_flow_id_here") // set the flow id
     ->variable('date', "Sunday") // the the value for variable "date" in your flow message template
     ->send(); // send
-    
+
 // send in bulk with variables per recipient
 Msg91::sms()
     ->to([912343434312, 919898889892]) // set the mobiles with country code
@@ -215,7 +212,7 @@ Msg91::sms()
     ->send(); // send
 ```
 
-> For a detailed usage and options, please visit [msg91-php's documentation][client-sending-sms] on sending SMSs. 
+> For a detailed usage and options, please visit [msg91-php's documentation][client-sending-sms] on sending SMSs.
 
 ## Handling Responses
 
@@ -241,7 +238,6 @@ try {
 [client-examples]: https://github.com/craftsys/msg91-php#examples
 [client-managing-otps]: https://github.com/craftsys/msg91-php#managing-otps
 [client-sending-sms]: https://github.com/craftsys/msg91-php#sending-sms
-
 
 # Related
 
